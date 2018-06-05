@@ -1,0 +1,19 @@
+<h1> LOGIN</h1>
+  <%= simple_form_for(@user, method: :post, url: sessions_login_path) do |f|%>
+    <fieldset>
+      <legend>Please Log In</legend>
+      <div class="group wat-cf">
+        <div class="right">
+        <%= f.input :email%>
+        </div>
+      </div>
+      <div class="group wat-cf">
+        <div class="right"><%= f.input :password%></div>
+      </div>
+      <div class="group wat-cf">
+        <div class="right"><div class="button"><%= f.submit "Login" %></div></div>
+      </div>
+    </fieldset>
+  <% end %>
+  </div>
+</div>
